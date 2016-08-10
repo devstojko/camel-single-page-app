@@ -1,0 +1,24 @@
+<section class="work section fadeIn">
+  <div class="container">
+    <h2 class="h2">look at the <span class="highlight--orange">projects.</span></h2>
+    <div class="row">
+      <div ng-repeat="item in projectList.list" class="col-xsp-6 col-sm-4">
+        <div class="project-card">
+          <span class="project-card__date">{{item.date}}</span>
+          <div class="project-card__img">
+            <img ng-src="{{item.imgSrc}}" alt="" class="img-responsive">
+            <div class="project-card__hover">
+              <a href="#" class="icon-link">
+                <i class="fa fa-star"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">{{item.title}}</h3>
+          <div class="project-card__tag">
+            {{item.tag}}
+          </div>
+        </div><!-- /.project-card -->
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.work -->
